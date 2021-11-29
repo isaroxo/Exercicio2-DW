@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+body{
+    font-family: 'Epilogue', sans-serif;
+    background-color: #B678E7;
+    color: white;
+}
+.contactos{
+    text-decoration: none;
+}
+#titulo{
+    font-weight: normal;
+}
+#imagemisa{
+    width:300px;
+    height: auto;
+}
