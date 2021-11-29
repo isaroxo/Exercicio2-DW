@@ -5,8 +5,41 @@ body{
     background-color: #B678E7;
     color: white;
 }
+.containerhomepage {
+    margin: 4vh 2vw;
+}
+.rowcontactos ul{
+    padding: 0;
+    margin: 0;
+}
 .contactos{
+    list-style-type: none;
+    font-size: 20pt;
+}
+.email{
+    display: inline;
+    cursor: pointer;
+}
+.email:hover{
+    /*esta opção acho que não funciona muito bem, com o text-shadow é uma alternativa para o que pretendo
+   -webkit-text-stroke: 1px #AC61E8;*/
+    text-shadow: -1px -1px 0 #a758e9, 1px -1px 0 #a758e9, -1px 1px 0 #a758e9, 1px 1px 0 #a758e9;
+    color: #B678E7;
+}
+.behance{
+    text-align: right;
+    float: right;
+    display: inline;
+}
+.behance a{
     text-decoration: none;
+    color: white;
+}
+.behance a:hover{
+    /*esta opção acho que não funciona muito bem, com o text-shadow é uma alternativa para o que pretendo
+   -webkit-text-stroke: 1px #AC61E8;*/
+    text-shadow: -1px -1px 0 #a758e9, 1px -1px 0 #a758e9, -1px 1px 0 #a758e9, 1px 1px 0 #a758e9;
+    color: #B678E7;
 }
 #titulo{
     font-weight: normal;
