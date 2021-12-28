@@ -1,12 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
 
+html{
+    cursor: none;
+}
 body{
     font-family: 'Epilogue', sans-serif;
     background-color: #B678E7;
     color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
 }
+/*Particulas*/
+canvas {
+    display: block;
+    vertical-align: bottom;
+    height: 1800px;
+}
+#particles-js {
+    visibility: visible;
+    opacity: 1;
+    transition-property: visibility, opacity;
+    transition-duration: 3s, 3s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 50% 50%;
+    top:0;
+    z-index: -1;
+}
+/*Rato*/
+#cursor{
+    height:35px;
+    width:35px;
+    border:2px solid white;
+    border-radius:50%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    pointer-events: none;
+}
+#scroll{
+    text-align: center;
+    position:absolute;
+    transform:translate(-50%,-50%);
+}
+/*Header*/
 .containerhomepage {
-    margin: 4vh 2vw;
+    margin: 32px 35px;
 }
 .rowcontactos ul{
     padding: 0;
@@ -16,35 +58,183 @@ body{
     list-style-type: none;
     font-size: 20pt;
 }
-.email{
+/*Email*/
+#email{
     display: inline;
-    cursor: pointer;
+    position: relative;
+    left: -5000px;
+    transition-property: position, left;
+    transition-duration: 2s, 2s;
+    transition-delay: 1s, 1s;
 }
-.email:hover{
-    /*esta opção acho que não funciona muito bem, com o text-shadow é uma alternativa para o que pretendo
-   -webkit-text-stroke: 1px #AC61E8;*/
-    text-shadow: -1px -1px 0 #a758e9, 1px -1px 0 #a758e9, -1px 1px 0 #a758e9, 1px 1px 0 #a758e9;
-    color: #B678E7;
+
+#email::selection{
+    background-color: #0085C0;
 }
-.behance{
+
+#textocopiar {
+    font-size: 11pt;
+    visibility: hidden;
+    width: 120px;
+    background-color: #B678E7;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    border:3px solid white;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#textocopiar::after {
+    content: "";
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: 107%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+#inputemail{
+    display: none;
+}
+/*Behance*/
+#behance{
     text-align: right;
     float: right;
     display: inline;
 }
-.behance a{
+
+#linkbehance{
+    cursor: none;
     text-decoration: none;
     color: white;
+    position: relative;
+    right: -5000px;
+    transition-property: position, right;
+    transition-duration: 2s, 2s;
+    transition-delay: 1s, 1s;
 }
-.behance a:hover{
-    /*esta opção acho que não funciona muito bem, com o text-shadow é uma alternativa para o que pretendo
-   -webkit-text-stroke: 1px #AC61E8;*/
-    text-shadow: -1px -1px 0 #a758e9, 1px -1px 0 #a758e9, -1px 1px 0 #a758e9, 1px 1px 0 #a758e9;
+#linkbehance::selection{
+    background-color: #0085C0;
+}
+/*Título*/
+#divtitulo{
+    width: 100%;
+    height: 97.9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: -5000px;
+    transition-property: position, bottom;
+    transition-duration: 2s, 2s;
+    transition-delay: 1s, 1s;
+}
+#tituloisa, #tituloroxo{
+    font-weight: normal;
+    font-size: 100pt;
+    float: left;
+}
+#tituloisa::selection, #tituloroxo::selection{
+    background-color: #0085C0;
+}
+#tituloisa{
+    margin-bottom: -25px;
+}
+#tituloroxo{
+    text-shadow: -1.2px -1.2px 0 #a758e9, 1.2px -1.2px 0 #a758e9, -1.2px 1.2px 0 #a758e9, 1.2px 1.2px 0 #a758e9;
     color: #B678E7;
 }
-#titulo{
-    font-weight: normal;
+/*Texto*/
+#divtexto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#textoisa{
+    font-size: 15pt;
+    display: inline-block;
+}
+
+#textoisa::selection{
+    background-color: #0085C0;
 }
 #imagemisa{
-    width:300px;
+    width: 370px;
     height: auto;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 3s;
+}
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #0085C0;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #F8EFFF;
+}
+
+@media screen and (max-width: 1200px) {
+    #imagemisa {
+       width: 300px;
+    }
+}
+@media screen and (max-width: 992px) {
+    #divtexto {
+        flex-direction: column;
+    }
+    #textoisa {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .contactos{
+        font-size: 15pt;
+    }
+    #tituloisa, #tituloroxo{
+        font-size: 80pt;
+    }
+    #textoisa{
+        font-size: 11pt;
+    }
+    #imagemisa{
+        width:250px;
+    }
+    #cursor{
+        display: none;
+    }
+    #scroll{
+        display: none;
+    }
+    .containerhomepage {
+        margin: 22px 25px;
+    }
+}
+@media screen and (max-width: 576px) {
+    #tituloisa, #tituloroxo{
+        font-size: 70pt;
+    }
+    #imagemisa{
+        width:200px;
+    }
 }

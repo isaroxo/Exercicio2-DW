@@ -15,11 +15,9 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="21YpoesFOoQibMN8G8dG2ex3GD5" />
   <component name="ProjectViewState">
@@ -30,8 +28,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../ProjetoDW" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjetoDW_Meta2_Melhorias_Grupo10" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -43,9 +42,37 @@
       <option name="presentableId" value="Default" />
       <updated>1638128051967</updated>
       <workItem from="1638128053016" duration="1581000" />
-      <workItem from="1638185193584" duration="1021000" />
-      <workItem from="1638186831143" duration="635000" />
-      <workItem from="1638211434121" duration="3494000" />
+      <workItem from="1638185193584" duration="1415000" />
+      <workItem from="1638186713517" duration="120000" />
+      <workItem from="1638794598828" duration="189000" />
+      <workItem from="1638794874130" duration="62000" />
+      <workItem from="1638794945355" duration="1055000" />
+      <workItem from="1638801501969" duration="7997000" />
+      <workItem from="1638966576235" duration="2215000" />
+      <workItem from="1638975851025" duration="7541000" />
+      <workItem from="1640097881037" duration="5102000" />
+      <workItem from="1640109390335" duration="5779000" />
+      <workItem from="1640117344269" duration="188000" />
+      <workItem from="1640117850067" duration="235000" />
+      <workItem from="1640173108335" duration="3880000" />
+      <workItem from="1640185360100" duration="5763000" />
+      <workItem from="1640208624321" duration="909000" />
+      <workItem from="1640276894724" duration="3187000" />
+      <workItem from="1640283020377" duration="4360000" />
+      <workItem from="1640295240784" duration="3334000" />
+      <workItem from="1640347641663" duration="3517000" />
+      <workItem from="1640357753335" duration="7469000" />
+      <workItem from="1640373275052" duration="1336000" />
+      <workItem from="1640431761854" duration="4105000" />
+      <workItem from="1640445923795" duration="3886000" />
+      <workItem from="1640457296915" duration="5143000" />
+      <workItem from="1640467445958" duration="5688000" />
+      <workItem from="1640517773859" duration="5578000" />
+      <workItem from="1640531022269" duration="5790000" />
+      <workItem from="1640545342370" duration="1074000" />
+      <workItem from="1640553257423" duration="4888000" />
+      <workItem from="1640605438264" duration="648000" />
+      <workItem from="1640615865268" duration="3251000" />
     </task>
     <servers />
   </component>
@@ -53,9 +80,17 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1638214365023">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1640451917390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1638214365023" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1640451917390" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1640468049751">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1640468049751" />
+    <state x="682" y="190" key="run.anything.popup" timestamp="1638803365718">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="682" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1638803365718" />
   </component>
 </project>
